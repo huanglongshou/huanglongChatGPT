@@ -170,6 +170,43 @@
 
 <details><summary>如果觉得以上方法比较麻烦，我们提供了Docker镜像</summary>
 
+#### 创建目录
+
+```shell
+mkdir -p data/docker_data/chatgpt
+cd data/docker_data/chatgpt
+```
+
+#### 创建 docker-compose.yml 文件
+
+```shell
+version: '3'
+
+services:
+  app:
+    image: tuchuanhuhuhu/chuanhuchatgpt:latest
+    restart: unless-stopped
+    ports:
+      - 7860:7860
+    
+    environment:
+      OPENAI_API_KEY: xxxxxx
+      api_host: "替换成自定义的api请求地址" \
+      USERNAME: "替换成用户名" 
+      PASSWORD: "替换成密码" 
+    
+    volumes:
+      - ~/chatGPThistory:/app/history
+```
+
+
+
+
+
+
+
+
+
 #### 拉取镜像
 
 ```shell
