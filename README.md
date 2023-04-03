@@ -199,7 +199,11 @@ services:
       - ~/chatGPThistory:/app/history
 ```
 
+#### 运行chatgpt
 
+```shell
+docker-compose up -d
+```
 
 
 
