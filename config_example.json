@@ -2,7 +2,10 @@
     "openai_api_key": "sk-xxxxxxxxxxxxxxxxxxxxxxxxx",
     "https_proxy": "http://127.0.0.1:1079",
     "http_proxy": "http://127.0.0.1:1079",
-    "users": [], 
+    "users": [
+		["admin", "admin"],
+		["guest", "guest"]
+    ], 
     "advance_docs": {
         "pdf": {
             "two_column": false,
